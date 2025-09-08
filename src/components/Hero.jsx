@@ -31,7 +31,7 @@ export default function Hero() {
           className="text-4xl md:text-6xl font-bold mb-4 font-sans"
         >
           {" Emanuel Quispe "}
-          <span className="text-indigo-400">Backend Nodejs Developer</span>
+          <span className="text-green-500">Backend Nodejs Developer</span>
         </motion.h2>
 
         {/* Descripción */}
@@ -47,7 +47,7 @@ export default function Hero() {
         <motion.a
           variants={item}
           href="#projects"
-          className="bg-indigo-500 hover:bg-indigo-600 px-6 py-3 rounded-xl font-medium"
+          className="bg-green-500 hover:bg-green-800 px-6 py-3 rounded-xl font-medium"
         >
           Ver proyectos
         </motion.a>

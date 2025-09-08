@@ -79,7 +79,7 @@ export default function TechStackCategorized() {
   return (
     <section id="stack" className="px-6 py-20 bg-gray-900 text-white">
       <div className="max-w-5xl mx-auto text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">⚙️ Tech Stack</h2>
+        <h2 className="text-3xl font-bold mb-4">Tech Stack</h2>
         <p className="text-gray-300">
           Tecnologías y herramientas que utilizo para construir soluciones
           backend y aplicaciones progresivas:
@@ -96,7 +96,7 @@ export default function TechStackCategorized() {
             viewport={{ once: true, amount: 0.2 }}
             className="bg-gray-800 rounded-xl p-6 shadow-md"
           >
-            <h3 className="text-xl font-semibold text-indigo-400 mb-4">{cat.name}</h3>
+            <h3 className="text-xl font-semibold text-green-600 mb-4">{cat.name}</h3>
             <div className="grid grid-cols-3 gap-4">
               {cat.items.map((tech, i) => (
                 <motion.div

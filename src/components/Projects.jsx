@@ -51,7 +51,7 @@ export default function Projects() {
       className="min-h-screen px-6 py-20 bg-gray-800 text-white"
     >
       <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-3xl font-bold mb-4">🚀 Proyectos</h2>
+        <h2 className="text-3xl font-bold mb-4">Proyectos</h2>
         <p className="text-gray-300">
           Algunos de mis trabajos más destacados como backend developer:
         </p>

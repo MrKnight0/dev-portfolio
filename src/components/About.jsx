@@ -3,22 +3,22 @@ import { motion } from "framer-motion";
 export default function About() {
   const experiences = [
     {
-      year: "2025",
-      title: "Desarrollador Backend Freelance",
+      year: "Jul 2025 - Sep 2025",
+      title: "Practica Profesional Ing Informática",
       description:
-        "Desarrollo de APIs REST con Node.js y Express. Integración de bases de datos MongoDB y PostgreSQL.",
+        "Desarrollo e implementación de PWA enfocada en control de seguimiento de envíos a faenas de la empresa - Kinross Copiapo",
     },
     {
-      year: "2024",
-      title: "Proyecto Personal: Sistema de Autenticación",
+      year: "May 2024 - Ene 2025",
+      title: "Analista de Sistemas",
       description:
-        "Implementación de JWT y bcrypt para manejo seguro de usuarios y sesiones.",
+        "Encargado de administración de sistemas. Automatizaciones vía tecnología Javascript. Administración de bases de datos SQL Server y migración de software ERP - Transportes Verasay",
     },
     {
-      year: "2023",
-      title: "Bootcamp Desarrollo Web",
+      year: "Ago 2023 - Abr 2024",
+      title: "Técnico Informático",
       description:
-        "Formación intensiva en desarrollo fullstack con enfoque en backend, arquitecturas limpias y despliegue en la nube.",
+        "Funciones de Soporte Usuarios y automatizaciones de procesos empresariales vía Google Script - Transportes Verasay",
     },
   ];
 
@@ -58,7 +58,7 @@ export default function About() {
       <div className="max-w-3xl text-center mb-12">
         <h2 className="text-3xl font-bold mb-4">Sobre mí</h2>
         <p className="text-gray-300">
-          Soy un <span className="text-indigo-400">desarrollador backend</span>
+          Soy un <span className="text-green-600">desarrollador backend </span>
           apasionado por construir sistemas escalables, seguros y eficientes. 
           Aquí un resumen de mi trayectoria:
         </p>
@@ -66,8 +66,8 @@ export default function About() {
 
       {/* Experiencia */}
       <div className="w-full max-w-3xl mb-16">
-        <h3 className="text-2xl font-semibold mb-6 text-indigo-400">💼 Experiencia</h3>
-        <div className="relative border-l-2 border-indigo-500 pl-6">
+        <h3 className="text-2xl font-semibold mb-6 text-green-600">Experiencia</h3>
+        <div className="relative border-l-2 border-green-800 pl-6">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
@@ -78,9 +78,9 @@ export default function About() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
             >
-              <div className="absolute -left-3 w-6 h-6 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
+              <div className="absolute -left-3 w-6 h-6 bg-green-500 rounded-full border-2 border-gray-900"></div>
               <h4 className="text-xl font-semibold">{exp.title}</h4>
-              <span className="text-indigo-400 text-sm">{exp.year}</span>
+              <span className="text-green-600 text-sm">{exp.year}</span>
               <p className="text-gray-300 mt-2">{exp.description}</p>
             </motion.div>
           ))}
@@ -89,8 +89,8 @@ export default function About() {
 
       {/* Educación */}
       <div className="w-full max-w-3xl">
-        <h3 className="text-2xl font-semibold mb-6 text-indigo-400">🎓 Educación</h3>
-        <div className="relative border-l-2 border-indigo-500 pl-6">
+        <h3 className="text-2xl font-semibold mb-6 text-green-600">Educación</h3>
+        <div className="relative border-l-2 border-green-800 pl-6">
           {education.map((edu, index) => (
             <motion.div
               key={index}
@@ -101,9 +101,9 @@ export default function About() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
             >
-              <div className="absolute -left-3 w-6 h-6 bg-indigo-500 rounded-full border-2 border-gray-900"></div>
+              <div className="absolute -left-3 w-6 h-6 bg-green-500 rounded-full border-2 border-gray-900"></div>
               <h4 className="text-xl font-semibold">{edu.title}</h4>
-              <span className="text-indigo-400 text-sm">{edu.year}</span>
+              <span className="text-green-600 text-sm">{edu.year}</span>
               <p className="text-gray-300 mt-2">{edu.description}</p>
             </motion.div>
           ))}

@@ -24,8 +24,8 @@ export default function Contact() {
         viewport={{ once: true, amount: 0.2 }}
         className="max-w-4xl mx-auto text-center"
       >
-        <motion.h2 variants={item} className="text-3xl font-bold mb-4 text-indigo-400">
-          📩 Contáctame
+        <motion.h2 variants={item} className="text-3xl font-bold mb-4 text-green-600">
+          Contáctame
         </motion.h2>
         <motion.p variants={item} className="text-gray-300 mb-12">
           ¿Tienes un proyecto o idea en mente? ¡Hablemos! 
@@ -37,21 +37,21 @@ export default function Contact() {
           <input
             type="text"
             placeholder="Nombre"
-            className="p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-indigo-400"
+            className="p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-green-500"
           />
           <input
             type="email"
             placeholder="Email"
-            className="p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-indigo-400"
+            className="p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-green-500"
           />
           <textarea
             placeholder="Mensaje"
             rows="5"
-            className="p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-indigo-400"
+            className="p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-green-500"
           ></textarea>
           <button
             type="submit"
-            className="bg-indigo-500 hover:bg-indigo-600 px-6 py-3 rounded-xl font-medium transition-colors"
+            className="bg-green-500 hover:bg-green-700 px-6 py-3 rounded-xl font-medium transition-colors"
           >
             Enviar
           </button>
@@ -59,10 +59,10 @@ export default function Contact() {
 
         {/* Redes sociales */}
         <motion.div variants={item} className="flex justify-center gap-6 mt-8">
-          <a href="https://github.com/MrKnight0" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400">
+          <a href="https://github.com/MrKnight0" target="_blank" rel="noopener noreferrer" className="hover:text-green-600">
             <SiGithub size={28} />
           </a>
-          <a href="https://www.linkedin.com/in/emanuel-quispe-3a0523261/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400">
+          <a href="https://www.linkedin.com/in/emanuel-quispe-3a0523261/" target="_blank" rel="noopener noreferrer" className="hover:text-green-600">
             <SiLinkedin size={28} />
           </a>
         </motion.div>
