@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-gray-800 text-white shadow-md z-50">
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold">Mi Portafolio</h1>
+        <h1 className="text-xl font-bold">Portafolio</h1>
 
         {/* Links (pantallas grandes) */}
         <ul className="hidden md:flex space-x-6">

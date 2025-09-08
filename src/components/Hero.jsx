@@ -31,7 +31,7 @@ export default function Hero() {
           className="text-4xl md:text-6xl font-bold mb-4 font-sans"
         >
           {" Emanuel Quispe "}
-          <span className="text-green-500">Backend Nodejs Developer</span>
+          <span className="text-green-600">Backend Nodejs Developer</span>
         </motion.h2>
 
         {/* Descripción */}

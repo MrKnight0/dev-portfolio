@@ -4,31 +4,35 @@ import { Github, ExternalLink } from "lucide-react";
 export default function Projects() {
   const projects = [
     {
-      title: "API de Autenticación",
+      title: "PWA - Seguimiento de QR",
       description:
-        "Sistema de autenticación con JWT, bcrypt y roles de usuario.",
-      tech: ["Node.js", "Express", "MongoDB"],
-      github: "https://github.com/tuusuario/auth-api",
-      demo: "https://auth-api-demo.com",
-      image: "https://via.placeholder.com/400x250?text=Auth+API",
+        "Sistema multiplataforma enfocado en el seguimiento de envíos realizados a faenas conservando un solo código QR",
+      tech: ["Node.js", "Express", "MongoDB", "React", "PWA", "Tailwindcss"],
+      github: "https://github.com/MrKnight0/fronted-qr-app",
+      demo: "",
     },
     {
-      title: "Gestor de Tareas",
+      title: "Nube Local",
       description:
-        "Aplicación backend para crear, editar y eliminar tareas con PostgreSQL.",
-      tech: ["Node.js", "Express", "PostgreSQL"],
-      github: "https://github.com/tuusuario/task-manager",
+        "Aplicación frontend y backend para almacenamiento de archivos en nube local. MongoDB.",
+      tech: ["Node.js", "Express", "MongoDB", "React", "Tailwindcss"],
+      github: "https://github.com/MrKnight0/file-manager-server",
       demo: "",
-      image: "https://via.placeholder.com/400x250?text=Task+Manager",
     },
     {
       title: "API de Productos",
       description:
-        "API REST con CRUD de productos, validaciones y testing con Jest.",
+        "API REST con CRUD de productos, validaciones y testing profesional.",
       tech: ["Node.js", "Express", "MongoDB", "Jest"],
-      github: "https://github.com/tuusuario/product-api",
+      github: "https://github.com/MrKnight0/node-crud-api-with-pro-validations",
       demo: "",
-      image: "https://via.placeholder.com/400x250?text=Product+API",
+    },
+    {
+      title: "Aplicación de Chat en tiempo real",
+      description: "Aplicación de conversaciones en tiempo real",
+      tech: ["Node.js", "Express", "MongoDB", "Socket.IO"],
+      github: "https://github.com/MrKnight0/node-realtime-chat-app",
+      demo: "",
     },
   ];
 
@@ -69,59 +73,50 @@ export default function Projects() {
           <motion.div
             key={index}
             variants={item}
-            className="bg-gray-900 rounded-2xl shadow-lg overflow-hidden hover:shadow-indigo-500/40 transition-shadow"
+            className="bg-gray-900 rounded-2xl shadow-lg p-6 flex flex-col justify-between hover:shadow-green-500/40 transition-shadow"
           >
-            {/* Imagen del proyecto */}
-            <img
-              src={proj.image}
-              alt={proj.title}
-              className="w-full h-48 object-cover"
-            />
-
             {/* Contenido */}
-            <div className="p-6 flex flex-col justify-between h-[calc(100%-12rem)]">
-              <div>
-                <h3 className="text-xl font-semibold mb-2 text-indigo-400">
-                  {proj.title}
-                </h3>
-                <p className="text-gray-300 mb-4">{proj.description}</p>
+            <div>
+              <h3 className="text-xl font-semibold mb-2 text-green-600">
+                {proj.title}
+              </h3>
+              <p className="text-gray-300 mb-4">{proj.description}</p>
 
-                {/* Tecnologías */}
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {proj.tech.map((t, i) => (
-                    <span
-                      key={i}
-                      className="bg-indigo-500/20 text-indigo-300 px-2 py-1 rounded-lg text-sm"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
+              {/* Tecnologías */}
+              <div className="flex flex-wrap gap-2 mb-4">
+                {proj.tech.map((t, i) => (
+                  <span
+                    key={i}
+                    className="bg-indigo-500/20 text-green-700 px-2 py-1 rounded-lg text-sm"
+                  >
+                    {t}
+                  </span>
+                ))}
               </div>
+            </div>
 
-              {/* Links */}
-              <div className="flex space-x-4 mt-4">
-                {proj.github && (
-                  <a
-                    href={proj.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 hover:text-indigo-400"
-                  >
-                    <Github size={18} /> GitHub
-                  </a>
-                )}
-                {proj.demo && (
-                  <a
-                    href={proj.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 hover:text-indigo-400"
-                  >
-                    <ExternalLink size={18} /> Demo
-                  </a>
-                )}
-              </div>
+            {/* Links */}
+            <div className="flex space-x-4 mt-4">
+              {proj.github && (
+                <a
+                  href={proj.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 hover:text-green-600"
+                >
+                  <Github size={18} /> GitHub
+                </a>
+              )}
+              {proj.demo && (
+                <a
+                  href={proj.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 hover:text-green-600"
+                >
+                  <ExternalLink size={18} /> Demo
+                </a>
+              )}
             </div>
           </motion.div>
         ))}

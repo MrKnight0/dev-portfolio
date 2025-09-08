@@ -59,7 +59,7 @@ export default function About() {
         <h2 className="text-3xl font-bold mb-4">Sobre mí</h2>
         <p className="text-gray-300">
           Soy un <span className="text-green-600">desarrollador backend </span>
-          apasionado por construir sistemas escalables, seguros y eficientes. 
+          apasionado por Nodejs, microservicios y diseño de sistemas seguros y eficientes. 
           Aquí un resumen de mi trayectoria:
         </p>
       </div>
