@@ -25,14 +25,14 @@ export default function Projects() {
         "API REST con CRUD de productos, validaciones y testing profesional.",
       tech: ["Node.js", "Express", "MongoDB", "Jest"],
       github: "https://github.com/MrKnight0/node-crud-api-with-pro-validations",
-      demo: "",
+      demo: "https://node-crud-api-with-pro-validations-1.onrender.com",
     },
     {
       title: "Aplicación de Chat en tiempo real",
       description: "Aplicación de conversaciones en tiempo real",
       tech: ["Node.js", "Express", "MongoDB", "Socket.IO"],
       github: "https://github.com/MrKnight0/node-realtime-chat-app",
-      demo: "",
+      demo: "https://realtime-client-app.vercel.app/",
     },
   ];
 
