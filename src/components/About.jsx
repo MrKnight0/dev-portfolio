@@ -24,22 +24,22 @@ export default function About() {
 
   const education = [
     {
-      year: "2022",
-      title: "Diplomado en Desarrollo de Software",
+      year: "2024",
+      title: "Ingenieria Informática - Inacap Copiapó",
       description:
-        "Aprendizaje en fundamentos de programación, algoritmos, estructuras de datos y buenas prácticas.",
+        "Aprendizaje en fundamentos de programación, algoritmos, estructuras de datos, buenas práticas e implementación de software",
     },
     {
-      year: "2020",
-      title: "Carrera Técnica en Informática",
+      year: "2023",
+      title: "Analista Programador - Inacap Copiapó",
       description:
-        "Base sólida en redes, bases de datos y programación orientada a objetos.",
+        "Base sólida en redes, bases de datos y programación orientada a objetos",
     },
     {
-      year: "2018",
-      title: "Curso de Introducción a JavaScript",
+      year: "2019",
+      title: "Programador - Instituto Comercial Copiapó",
       description:
-        "Primeros pasos en el desarrollo web y lógica de programación.",
+        "Primeros pasos en el desarrollo web, modelamiento de base de datos y lógica de programación",
     },
   ];
 
